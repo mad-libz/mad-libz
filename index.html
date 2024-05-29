@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mad Libs Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Mad Libs Story Generator</h1>
+            <div class="tabs">
+                <button class="tab-link active" onclick="openStory(event, 'Story1')">Fantasy</button>
+                <button class="tab-link" onclick="openStory(event, 'Story2')">Action</button>
+            </div>
+            
+            <div id="Story1" class="tab-content active">
+                <form id="f1">
+                    <label for="name">Character 1 name:</label>
+                    <input type="text" id="name" name="name" required placeholder="ex. John">
+                    <label for="gender">Gender:</label>
+                    <input type="text" id="gender" name="gender" required placeholder="Boy, Girl or Other">
+                    <label for="adjective">Adjective 1:</label>
+                    <input type="text" id="adjective" name="adjective" required placeholder="ex. Smart">
+                    <label for="name2">Character 2 name:</label>
+                    <input type="text" id="name2" name="name2" required placeholder="ex. John">
+                    <label for="gender2">Gender:</label>
+                    <input type="text" id="gender2" name="gender2" required placeholder="Boy, Girl or Other">
+                    <label for="adjective2">Adjective 2:</label>
+                    <input type="text" id="adjective2" name="adjective2" required placeholder="ex. Smart">
+                    <label for="place">Place:</label>
+                    <input type="text" id="place" name="place" required placeholder="ex. Walmart">
+                    <label for="item">Item:</label>
+                    <input type="text" id="item" name="item" required placeholder="ex. Banana">
+                    <button type="submit">Create Story</button>
+                </form>
+            </div>
+
+            <div id="Story2" class="tab-content">
+                <form id="form2">
+                    <label for="name">Character name:</label>
+                    <input type="text" id="name3" name="name" required placeholder="ex. John">
+                    <label for="adjective">Adjective:</label>
+                    <input type="text" id="adjective3" name="adjective" required placeholder="ex. Smart">
+                    <label for="npc">Npc Name:</label>
+                    <input type="text" id="npc3" name="npc" required placeholder="ex. Robo J">
+                    <label for="animal">Animal:</label>
+                    <input type="text" id="animal3" name="animal" required placeholder="ex. Chicken">
+                    <label for="place">Place:</label>
+                    <input type="text" id="place3" name="place" required placeholder="ex. Battle field">
+                    <label for="verb">Verb:</label>
+                    <input type="text" id="verb3" name="verb" required placeholder="ex. Swiftly">
+                    <label for="item">Item:</label>
+                    <input type="text" id="item3" name="item" required placeholder="ex. Banana">
+                    <label for="treasure">Treasure:</label>
+                    <input type="text" id="treasure3" name="treasure" required placeholder="ex. Gold Coins">
+                    <button type="submit">Create Story</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="story-container" id="story">
+            <h2 id="t-story"></h2>
+            <p id="story-1"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
